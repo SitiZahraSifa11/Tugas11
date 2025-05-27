@@ -26,7 +26,8 @@ public class CSVReader {
             }
             System.out.println("Jumlah baris pada file tersebut : "+jumlahBrs);
         } catch (IOException e) {
-            e.printStackTrace();
+           System.err.println("Gagal membaca file: " + csvFile);
+           System.err.println("Pesan error: " + e.getMessage());
         }
     }
 }
